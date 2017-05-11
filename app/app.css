@@ -1,0 +1,128 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,700,500);
+
+body {
+  padding-top: 90px;
+  background:#F7F7F7;
+  color:#666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight:100;
+}
+
+body{
+  width: 100%;
+  background: -webkit-linear-gradient(left, #22d686, #24d3d3, #22d686, #24d3d3);
+  background: linear-gradient(to right, #22d686, #24d3d3, #22d686, #24d3d3);
+  background-size: 600% 100%;
+  -webkit-animation: HeroBG 20s ease infinite;
+  animation: HeroBG 20s ease infinite;
+}
+
+@-webkit-keyframes HeroBG {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes HeroBG {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+.panel {
+  border-radius: 5px;
+}
+label {
+  font-weight: 300;
+}
+.panel-mainbox {
+  border: none;
+  -webkit-box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+  -moz-box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+  box-shadow: 0px 0px 49px 14px rgba(188,190,194,0.39);
+}
+
+.panel-mainbox>.panel-heading {
+  color: #848c9d;
+  background-color: #dadeec;
+  border-color: #fff;
+  text-align:center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 0px;
+  padding: 0px 15px;
+}
+
+.panel-mainbox>.panel-heading .current {
+  padding: 20px 30px;
+  border-bottom-leftt-radius: 5px;
+}
+.panel-mainbox>.panel-heading .add {
+  padding: 20px 30px;
+  border-bottom-right-radius: 5px;
+}
+.panel-mainbox>.panel-heading .delete {
+  padding: 20px 30px;
+  border-bottom-leftt-radius: 5px;
+}
+.panel-mainbox>.panel-heading a{
+  text-decoration: none;
+  color: #666;
+  font-weight: 300;
+  font-size: 16px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.panel-mainbox>.panel-heading a#add {
+  width: 100%;
+  text-align: center;
+}
+.panel-mainbox>.panel-heading a#delete {
+  width: 100%;
+  text-align: center;
+}
+.panel-mainbox>.panel-heading a#current {
+  width: 100%;
+  text-align: center;
+}

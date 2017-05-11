@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="View3Ctrl">
+
+    First Name: <input type="text" ng-model="firstName"><br>
+    Last Name: <input type="text" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+    <button ng-click="$storage.x = $storage.x + 1">{{$storage.x}}</button> + <button ng-click="$storage.y = $storage.y + 1">{{$storage.y}}</button> = {{$storage.x + $storage.y}}
+    <br>
+    <button ng-click="deleteY()">clear Y</button>
+    <br>
+    <p ng-hide="value == null" ng-repeat="val in value">
+        {{val}}
+        <button ng-click="deleteitem(value,$index)">Delete this!</button>
+    </p>
+    <br>
+    <button ng-click="add()">Add item</button>
+    <br>
+    <button ng-click="$storage.$reset({
+      x: 0,
+      y: 0
+    })">Clear localStorage</button>
+</div>
+</body>
+</html>
