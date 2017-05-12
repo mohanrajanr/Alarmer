@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/ui-listViewCell.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1>Code coverage report for <span class="entity">src/ui-listViewCell.js</span></h1>
+    <h2>
+        Statements: <span class="metric">16.67% <small>(5 / 30)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 2)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">12.5% <small>(1 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">16.67% <small>(5 / 30)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">src/</a> &#187; ui-listViewCell.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
+ * @ngdoc directive
+ * @name uiListViewCell
+ * @description
+ * The visual representation of a list view cell.  A cell is a container
+ * to a visible row.  As the list is scrolled, the cells are updated with the
+ * current set of visible rows to display.
+ * 
+ * Certain choices were made for performance reasons.  For example, instead of
+ * watchers, the directive acts as a delegate to the cell.  When the cell is updated, it
+ * delegates those changes to the directive.
+ * 
+ * @private
+ */
+"use strict";
+&nbsp;
+angular.module("ui-listView").directive("uiListViewCell", function () {
+&nbsp;
+    return {
+        require: "^uiListView",
+        link: <span class="fstat-no" title="function not covered" >function link($scope, element, attrs, listView, $transclude) {</span>
+<span class="cstat-no" title="statement not covered" >            var rawElement = element[0];</span>
+<span class="cstat-no" title="statement not covered" >            var cell = $scope.cell;</span>
+<span class="cstat-no" title="statement not covered" >            var transcludeScope;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            $transclude(<span class="fstat-no" title="function not covered" >function (clone, scope) {</span></span>
+<span class="cstat-no" title="statement not covered" >                var content = element.children();</span>
+<span class="cstat-no" title="statement not covered" >                transcludeScope = scope;</span>
+<span class="cstat-no" title="statement not covered" >                updateRow(cell.row);</span>
+<span class="cstat-no" title="statement not covered" >                content.empty();</span>
+<span class="cstat-no" title="statement not covered" >                content.append(clone);</span>
+            });
+&nbsp;
+<span class="fstat-no" title="function not covered" >            function updateOffset(offset) {</span>
+<span class="cstat-no" title="statement not covered" >                rawElement.style.top = offset + "px";</span>
+            }
+&nbsp;
+<span class="fstat-no" title="function not covered" >            function updateSize() {</span>
+<span class="cstat-no" title="statement not covered" >                var height = rawElement.clientHeight;</span>
+<span class="cstat-no" title="statement not covered" >                var row = cell.row;</span>
+<span class="cstat-no" title="statement not covered" >                if (height !== row.height) {</span>
+                    //listView.setRowHeight(row, height);
+<span class="cstat-no" title="statement not covered" >                    row.height = height;</span>
+<span class="cstat-no" title="statement not covered" >                    listView.requestOffsetUpdate(row.index);</span>
+                }
+            }
+&nbsp;
+<span class="fstat-no" title="function not covered" >            function updateRow(row) {</span>
+<span class="cstat-no" title="statement not covered" >                transcludeScope[cell.itemIdentifier] = row.item;</span>
+<span class="cstat-no" title="statement not covered" >                transcludeScope.$index = row.index;</span>
+<span class="cstat-no" title="statement not covered" >                transcludeScope.$first = row.index === 0;</span>
+<span class="cstat-no" title="statement not covered" >                transcludeScope.$last = row.index === listView.rows.length - 1;</span>
+<span class="cstat-no" title="statement not covered" >                updateOffset(row.offset);</span>
+            }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            $scope.$watch(<span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >                return cell.row.index + "-" + rawElement.clientHeight;</span>
+            }, <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >                updateSize();</span>
+            });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            cell.delegate = {</span>
+                rowDidChange: updateRow,
+                offsetDidChange: updateOffset
+            };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            updateRow(cell.row);</span>
+        }
+    };
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9EZXZlbG9wZXIvUHJvamVjdHMvdWktbGlzdFZpZXcvc3JjL3VpLWxpc3RWaWV3Q2VsbC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7O0FBY0EsT0FBTyxDQUFDLE1BQU0sQ0FBQyxhQUFhLENBQUMsQ0FBQyxTQUFTLENBQUMsZ0JBQWdCLEVBQUUsWUFBTTs7QUFFNUQsV0FBTztBQUNILGVBQU8sRUFBRSxhQUFhO0FBQ3RCLFlBQUksRUFBQyxjQUFDLE1BQU0sRUFBRSxPQUFPLEVBQUUsS0FBSyxFQUFFLFFBQVEsRUFBRSxXQUFXLEVBQUU7QUFDakQsZ0JBQUksVUFBVSxHQUFHLE9BQU8sQ0FBQyxDQUFDLENBQUMsQ0FBQztBQUM1QixnQkFBSSxJQUFJLEdBQUcsTUFBTSxDQUFDLElBQUksQ0FBQztBQUN2QixnQkFBSSxlQUFlLENBQUM7O0FBRXBCLHVCQUFXLENBQUMsVUFBQyxLQUFLLEVBQUUsS0FBSyxFQUFLO0FBQzFCLG9CQUFJLE9BQU8sR0FBRyxPQUFPLENBQUMsUUFBUSxFQUFFLENBQUM7QUFDakMsK0JBQWUsR0FBRyxLQUFLLENBQUM7QUFDeEIseUJBQVMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7QUFDcEIsdUJBQU8sQ0FBQyxLQUFLLEVBQUUsQ0FBQztBQUNoQix1QkFBTyxDQUFDLE1BQU0sQ0FBQyxLQUFLLENBQUMsQ0FBQzthQUN6QixDQUFDLENBQUM7O0FBRUgscUJBQVMsWUFBWSxDQUFDLE1BQU0sRUFBRTtBQUMxQiwwQkFBVSxDQUFDLEtBQUssQ0FBQyxHQUFHLEdBQUcsTUFBTSxHQUFHLElBQUksQ0FBQzthQUN4Qzs7QUFFRCxxQkFBUyxVQUFVLEdBQUc7QUFDbEIsb0JBQUksTUFBTSxHQUFHLFVBQVUsQ0FBQyxZQUFZLENBQUM7QUFDckMsb0JBQUksR0FBRyxHQUFHLElBQUksQ0FBQyxHQUFHLENBQUM7QUFDbkIsb0JBQUksTUFBTSxLQUFLLEdBQUcsQ0FBQyxNQUFNLEVBQUU7O0FBRXZCLHVCQUFHLENBQUMsTUFBTSxHQUFHLE1BQU0sQ0FBQztBQUNwQiw0QkFBUSxDQUFDLG1CQUFtQixDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUMsQ0FBQztpQkFDM0M7YUFDSjs7QUFFRCxxQkFBUyxTQUFTLENBQUUsR0FBRyxFQUFFO0FBQ3JCLCtCQUFlLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQyxHQUFHLEdBQUcsQ0FBQyxJQUFJLENBQUM7QUFDaEQsK0JBQWUsQ0FBQyxNQUFNLEdBQUcsR0FBRyxDQUFDLEtBQUssQ0FBQztBQUNuQywrQkFBZSxDQUFDLE1BQU0sR0FBRyxHQUFHLENBQUMsS0FBSyxLQUFLLENBQUMsQ0FBQztBQUN6QywrQkFBZSxDQUFDLEtBQUssR0FBRyxHQUFHLENBQUMsS0FBSyxLQUFLLFFBQVEsQ0FBQyxJQUFJLENBQUMsTUFBTSxHQUFHLENBQUMsQ0FBQztBQUMvRCw0QkFBWSxDQUFDLEdBQUcsQ0FBQyxNQUFNLENBQUMsQ0FBQzthQUM1Qjs7QUFFRCxrQkFBTSxDQUFDLE1BQU0sQ0FBQyxZQUFNO0FBQ2hCLHVCQUFPLElBQUksQ0FBQyxHQUFHLENBQUMsS0FBSyxHQUFHLEdBQUcsR0FBRyxVQUFVLENBQUMsWUFBWSxDQUFDO2FBQ3pELEVBQUUsWUFBTTtBQUNMLDBCQUFVLEVBQUUsQ0FBQzthQUNoQixDQUFDLENBQUM7O0FBRUgsZ0JBQUksQ0FBQyxRQUFRLEdBQUc7QUFDWiw0QkFBWSxFQUFFLFNBQVM7QUFDdkIsK0JBQWUsRUFBRSxZQUFZO2FBQ2hDLENBQUM7O0FBRUYscUJBQVMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7U0FDdkI7S0FDSixDQUFDO0NBRUwsQ0FBQyxDQUFDIiwiZmlsZSI6Ii9EZXZlbG9wZXIvUHJvamVjdHMvdWktbGlzdFZpZXcvc3JjL3VpLWxpc3RWaWV3Q2VsbC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQG5nZG9jIGRpcmVjdGl2ZVxuICogQG5hbWUgdWlMaXN0Vmlld0NlbGxcbiAqIEBkZXNjcmlwdGlvblxuICogVGhlIHZpc3VhbCByZXByZXNlbnRhdGlvbiBvZiBhIGxpc3QgdmlldyBjZWxsLiAgQSBjZWxsIGlzIGEgY29udGFpbmVyXG4gKiB0byBhIHZpc2libGUgcm93LiAgQXMgdGhlIGxpc3QgaXMgc2Nyb2xsZWQsIHRoZSBjZWxscyBhcmUgdXBkYXRlZCB3aXRoIHRoZVxuICogY3VycmVudCBzZXQgb2YgdmlzaWJsZSByb3dzIHRvIGRpc3BsYXkuXG4gKiBcbiAqIENlcnRhaW4gY2hvaWNlcyB3ZXJlIG1hZGUgZm9yIHBlcmZvcm1hbmNlIHJlYXNvbnMuICBGb3IgZXhhbXBsZSwgaW5zdGVhZCBvZlxuICogd2F0Y2hlcnMsIHRoZSBkaXJlY3RpdmUgYWN0cyBhcyBhIGRlbGVnYXRlIHRvIHRoZSBjZWxsLiAgV2hlbiB0aGUgY2VsbCBpcyB1cGRhdGVkLCBpdFxuICogZGVsZWdhdGVzIHRob3NlIGNoYW5nZXMgdG8gdGhlIGRpcmVjdGl2ZS5cbiAqIFxuICogQHByaXZhdGVcbiAqL1xuYW5ndWxhci5tb2R1bGUoXCJ1aS1saXN0Vmlld1wiKS5kaXJlY3RpdmUoXCJ1aUxpc3RWaWV3Q2VsbFwiLCAoKSA9PiB7XG4gICAgXG4gICAgcmV0dXJuIHtcbiAgICAgICAgcmVxdWlyZTogXCJedWlMaXN0Vmlld1wiLFxuICAgICAgICBsaW5rICgkc2NvcGUsIGVsZW1lbnQsIGF0dHJzLCBsaXN0VmlldywgJHRyYW5zY2x1ZGUpIHtcbiAgICAgICAgICAgIHZhciByYXdFbGVtZW50ID0gZWxlbWVudFswXTtcbiAgICAgICAgICAgIHZhciBjZWxsID0gJHNjb3BlLmNlbGw7XG4gICAgICAgICAgICB2YXIgdHJhbnNjbHVkZVNjb3BlO1xuICAgICAgICAgICAgXG4gICAgICAgICAgICAkdHJhbnNjbHVkZSgoY2xvbmUsIHNjb3BlKSA9PiB7XG4gICAgICAgICAgICAgICAgdmFyIGNvbnRlbnQgPSBlbGVtZW50LmNoaWxkcmVuKCk7XG4gICAgICAgICAgICAgICAgdHJhbnNjbHVkZVNjb3BlID0gc2NvcGU7XG4gICAgICAgICAgICAgICAgdXBkYXRlUm93KGNlbGwucm93KTtcbiAgICAgICAgICAgICAgICBjb250ZW50LmVtcHR5KCk7XG4gICAgICAgICAgICAgICAgY29udGVudC5hcHBlbmQoY2xvbmUpO1xuICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIGZ1bmN0aW9uIHVwZGF0ZU9mZnNldChvZmZzZXQpIHtcbiAgICAgICAgICAgICAgICByYXdFbGVtZW50LnN0eWxlLnRvcCA9IG9mZnNldCArIFwicHhcIjtcbiAgICAgICAgICAgIH1cbiAgICAgICAgICAgIFxuICAgICAgICAgICAgZnVuY3Rpb24gdXBkYXRlU2l6ZSgpIHtcbiAgICAgICAgICAgICAgICB2YXIgaGVpZ2h0ID0gcmF3RWxlbWVudC5jbGllbnRIZWlnaHQ7XG4gICAgICAgICAgICAgICAgdmFyIHJvdyA9IGNlbGwucm93O1xuICAgICAgICAgICAgICAgIGlmIChoZWlnaHQgIT09IHJvdy5oZWlnaHQpIHtcbiAgICAgICAgICAgICAgICAgICAgLy9saXN0Vmlldy5zZXRSb3dIZWlnaHQocm93LCBoZWlnaHQpO1xuICAgICAgICAgICAgICAgICAgICByb3cuaGVpZ2h0ID0gaGVpZ2h0O1xuICAgICAgICAgICAgICAgICAgICBsaXN0Vmlldy5yZXF1ZXN0T2Zmc2V0VXBkYXRlKHJvdy5pbmRleCk7XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgfVxuICAgICAgICAgICAgXG4gICAgICAgICAgICBmdW5jdGlvbiB1cGRhdGVSb3cgKHJvdykge1xuICAgICAgICAgICAgICAgIHRyYW5zY2x1ZGVTY29wZVtjZWxsLml0ZW1JZGVudGlmaWVyXSA9IHJvdy5pdGVtO1xuICAgICAgICAgICAgICAgIHRyYW5zY2x1ZGVTY29wZS4kaW5kZXggPSByb3cuaW5kZXg7XG4gICAgICAgICAgICAgICAgdHJhbnNjbHVkZVNjb3BlLiRmaXJzdCA9IHJvdy5pbmRleCA9PT0gMDtcbiAgICAgICAgICAgICAgICB0cmFuc2NsdWRlU2NvcGUuJGxhc3QgPSByb3cuaW5kZXggPT09IGxpc3RWaWV3LnJvd3MubGVuZ3RoIC0gMTtcbiAgICAgICAgICAgICAgICB1cGRhdGVPZmZzZXQocm93Lm9mZnNldCk7XG4gICAgICAgICAgICB9XG4gICAgICAgICAgICBcbiAgICAgICAgICAgICRzY29wZS4kd2F0Y2goKCkgPT4ge1xuICAgICAgICAgICAgICAgIHJldHVybiBjZWxsLnJvdy5pbmRleCArIFwiLVwiICsgcmF3RWxlbWVudC5jbGllbnRIZWlnaHQ7XG4gICAgICAgICAgICB9LCAoKSA9PiB7XG4gICAgICAgICAgICAgICAgdXBkYXRlU2l6ZSgpO1xuICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICBcbiAgICAgICAgICAgIGNlbGwuZGVsZWdhdGUgPSB7XG4gICAgICAgICAgICAgICAgcm93RGlkQ2hhbmdlOiB1cGRhdGVSb3csXG4gICAgICAgICAgICAgICAgb2Zmc2V0RGlkQ2hhbmdlOiB1cGRhdGVPZmZzZXRcbiAgICAgICAgICAgIH07XG4gICAgICAgICAgICAgICAgXG4gICAgICAgICAgICB1cGRhdGVSb3coY2VsbC5yb3cpO1xuICAgICAgICB9XG4gICAgfTtcbiAgICBcbn0pO1xuIl19</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Dec 14 2015 20:22:10 GMT-0800 (PST)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
