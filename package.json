@@ -16,6 +16,11 @@
     "karma-junit-reporter": "^0.4.1",
     "protractor": "^4.0.9"
   },
+  "dependencies": {
+    "angular-animate": "^1.6.4",
+    "angular-toastr": "^2.1.1",
+    "ngstorage": "^0.3.11"
+  },
   "scripts": {
     "postinstall": "bower install",
 
