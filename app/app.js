@@ -14,9 +14,12 @@ config(['$routeProvider', function($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/view3'});
 }]).
 controller('MainCtrl',function($scope,$timeout,dateFilter){
+    $scope.theclock = "Loading clock...";
+    $scope.thedate = "Loading Date...";
     $scope.updateTime = function(){
         $timeout(function(){
             $scope.theclock = (dateFilter(new Date(), 'hh:mm:ss'));
+            $scope.thedate = (dateFilter(new Date(), 'MMMM d, y'));
             $scope.updateTime();
         },1000);
     };

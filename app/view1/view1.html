@@ -1,1 +1,18 @@
-<p>This is the partial for view 1.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="View3Ctrl">
+    <div class="container">
+        <ul class="list-group" ng-repeat="val in value">
+            <li class="list-group-item"><strong>{{ val.title }}</strong><span class="badge">{{ val.time }}</span></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
