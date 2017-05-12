@@ -11,7 +11,7 @@ angular.module('myApp', [
 config(['$routeProvider', function($routeProvider) {
     //$locationProvider.hashPrefix('!');
 
-    $routeProvider.otherwise({redirectTo: '/view3'});
+    $routeProvider.otherwise({redirectTo: '/view1'});
 }]).
 controller('MainCtrl',function($scope,$timeout,dateFilter){
     $scope.theclock = "Loading clock...";

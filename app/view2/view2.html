@@ -10,11 +10,21 @@
     <div class="container">
         <div class="form-group">
             <label for="title">Alarm Title:</label>
-            <input type="text" class="form-control" id="title" ng-model="title" placeholder="Enter Alarm Title" name="email">
+            <input type="text" class="form-control" id="title" ng-model="title" placeholder="Enter Alarm Title" name="title">
         </div>
         <div class="form-group">
-            <label for="time">Time:</label>
-            <input type="date" class="form-control" id="time" ng-model="time" placeholder="Enter Time " name="pwd">
+            <label for="title">Time and Date:</label>
+            <p class="input-group">
+                        <input type="datetime" class="form-control"  datetime-picker="MM/dd/yyyy HH:mm" ng-model="picker3.date" is-open="picker3.open" placeholder="Select Time and Date" />
+                        <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" ng-click="openCalendar()"><i class="fa fa-calendar"></i></button>
+              </span>
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="title">Set For Recurring Alarm:</label>
+            <multiselect ng-model="selection" options="options" show-select-all="true" show-unselect-all="true">
+            </multiselect>
         </div>
         <button type="button" class="btn btn-default" ng-click="add()">Add item</button>
     </div>
