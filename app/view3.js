@@ -31,9 +31,9 @@ angular.module('myApp.view3', ['ngRoute','ngStorage','ui.bootstrap', 'ui.bootstr
     $scope.add = function(){
         if($scope.title!=null && $scope.picker3.date!=null) {
             if(typeof $scope.selection !== 'undefined' && $scope.selection.length > 0)
-                $scope.$storage.students.push({title: $scope.title, time: $scope.picker3.date.toLocaleString(), recurring: $scope.selection});
+                $scope.$storage.students.push({title: $scope.title, time: $scope.picker3.date.toLocaleString([], {year : 'numeric', month : 'numeric', day : 'numeric', hour: '2-digit', minute:'2-digit'}), recurring: $scope.selection});
             else
-                $scope.$storage.students.push({title: $scope.title, time: $scope.picker3.date.toLocaleString(), recurring: 'Once'});
+                $scope.$storage.students.push({title: $scope.title, time: $scope.picker3.date.toLocaleString([], { year : 'numeric', month : 'numeric', day : 'numeric', hour: '2-digit', minute:'2-digit'}), recurring: 'Once'});
             $scope.title = null;
             $scope.picker3.date=null;
             $scope.selection= [];
