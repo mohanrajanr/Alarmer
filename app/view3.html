@@ -8,14 +8,12 @@
 <body>
 <div ng-app="myApp" ng-controller="View3Ctrl">
     <br>
-    <div class="container">
         <ul class = "list-group-item" ng-repeat="val in value">
             <h4 class = "list-group-item-heading">{{ val.title }}</h4>
             <button type="button" style="float:right;margin-right: 16px" class="btn btn-danger" ng-click="deleteitem(value,$index)"><span class="glyphicon glyphicon-remove"></span> Delete</button>
             <p class = "list-group-item-text">{{ val.time }}</p>
             <p class = "list-group-item-text">{{ val.recurring }}</p>
         </ul>
-    </div>
 </div>
 </body>
 </html>
